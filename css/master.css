@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+html,body{
+	height: 100%;
+	width: 100%;	}
+
+.navbar {
+	background-color: #A3E4D7;
+	padding: 1% 0;
+	font-size: 1.2em;
+}
+.navbar-brand{
+	min-height: 35px;
+	padding: 0px 0px 20px;
+}
+.navbar-default .navbar-nav li a{
+	color: #050505;
+
+}
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active{
+	color: #FFF;
+}
+
+#arteryCenter{
+	text-shadow: 2px 2px #fff;
+}
+
+#home{
+	background: url(../img/d1.jpg) no-repeat center fixed;
+	display: table;
+	height:100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+.landing-text{
+	display:table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.landing-text h1{
+	font-size: 75px;
+	font-weight: 900%;
+	color: #4A235A;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+
+}
+.landing-text h3{
+	font-size: 30px;
+	font-weight: 700%;
+	color: #17202A;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+	text-align: center;
+font-family: 'Lato', sans-serif;
+}
+
+.padding{
+	padding: 20px 0;
+}
+.padding img{
+	width: 100%;
+}
+#fixed{
+    display: table;
+    height: 60%;
+    position: 100%;
+    background-size:cover;
+    opacity: 50%;
+}
+footer{
+	width: 100%;
+	background-color: #0E6251;
+	padding: 2.5em 0;
+	color: #FFF;
+}
+.fa{
+	padding: 15px;
+	font-size: 25px;
+	color: #FFF;
+}
+
+.fa:hover{
+	color: #050505;
+	text-decoration: none;
+}
+
+.fa-search:hover{
+	color: #FFF;
+}
+
+.icon{
+	max-width: 200px;
+}
+@media (max-width: 768px) {
+	.landing-text h1{
+		font-size: 300%;
+	}
+	.fa {
+		font-size: 20px;
+		padding: 10px;
+	}
+	.icon{
+		padding-top: 5%;
+		max-width: 100px;
+	}
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+	margin-bottom: 1em;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+
+.card-body {
+    padding:8px;
+}
+
+.team-section a:hover{
+	text-decoration: none;
+}
+
+img {
+  border-radius: 30%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#marginTop{
+	margin-top: 1.5em;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.team-section{
+	overflow: hidden;
+	text-align: center;
+	background:#85C1E9;
+	padding: 60px;
+}
+.team-section h1{
+	color:white;
+	font-size: 40px;
+}
+.border{
+	display: block;
+	margin: auto;
+	width: 160px;
+	height: 3px;
+	background:#1A5276;
+	margin-bottom: 40px;
+}
+.ps{
+	margin-bottom: 40px;
+}
+.ps a{
+	display: inline-block;
+	margin: 0 30px;
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.ps a img{
+	width: 100%
+	}
+.ps a:hover>img{
+	filter: none;
+	border: 2px solid black;
+	border-radius: 50%;
+}
+.section{
+	width:600px;
+	margin: auto;
+	font-size: 20px;
+	color: white;
+	text-align: justify;
+	height: 0;
+	overflow: hidden;
+}
+.section:target{
+	height: auto;
+}
+.name{
+	display: block;
+	margin: 30px;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+.jumbotron{
+	padding-top: 2em;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	background-color: rgb(255, 217, 0);
+}
+
+.jumbotron .col-12 p{
+	margin-bottom: 1.5em;
+}
+
+.searchButton .btn{
+	padding: 0px;
+	border-bottom: 0px;
+	margin-bottom: 1em;
+	box-sizing: content-box;
+}
+
+.searchButton .fa-search{
+	padding: 0.2em 0;
+}
+
+#showcase .overlay {
+	content: '';
+	padding-bottom: 4em;
+	margin-bottom: 1.5em;
+    position: relative;
+    border-radius: 5px;
+	background: rgba(66, 66, 66, 0.8); }
+	
+/* Background images */
+#showcase {
+  background: url(../img/writing.jpg) no-repeat center fixed;
+  position: relative;
+  background-size: cover;
+  color: #fff;  }
+
+#showcase .home-search {
+    position: relative;
+	border-radius: 5px; }
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+
+  #logoArtery{
+	  display: none;
+  }
+
+  #textLogo{
+	font-size: 1.5em;
+	color: red;
+	padding-left: 0.5em;
+	text-shadow: 2px 2px #FFF;
+  }
+
+  .navbar-brand{
+	  padding-top: 0.8em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+	#textLogo{
+		display: none;
+  }
+}
