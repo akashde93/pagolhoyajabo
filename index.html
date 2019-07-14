@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="css\master.css" type="text/css" rel="stylesheet">
   </head>
 
@@ -259,27 +257,15 @@
       <span class="border"></span>
       
       <div class="ps">
-        <a href="#p1"><img src="img/s1.jpg"></a>
-        <a href="#p2"><img src="img/s1.jpg"></a>
-        <a href="#p3"><img src="img/s2.jpg"></a>
+        <a onclick="textAbout('Kanika')"><img src="img/s1.jpg" alt="Kanika"></a>
+        <a onclick="textAbout('Mahboba')"><img src="img/s1.jpg" alt="Mahboba"></a>
+        <a onclick="textAbout('Akash')"><img src="img/s2.jpg" alt="Akash"></a>
       </div>
 
-      <div class="section" id="p1"style="text-align: center">
-        <span class="name" >kanika</span>
-        <span class="border"></span>
-        <p>Internet of things / 17BCS####</p>
-      </div>
-      
-      <div class="section" id="p2" style="text-align: center">
-        <span class="name" >Mahboba</span>
-        <span class="border"></span>
-        <p>Cloud Computing / 17BCS####</p>
-      </div>
-
-      <div class="section" id="p3" style="text-align: center">
-        <span class="name">Akash</span>
-        <span class="border"></span>
-        <p>Internet of things / 17BCS####</p>
+      <div id="p1" style="text-align: center">
+        <p class="name colorWhite" id="aboutName"></p>
+        <span id="separator" class=""></span>
+        <p id="aboutSpecialization" class="colorWhite"></p>
       </div>
     </section>
 
@@ -328,5 +314,23 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function textAbout(name){
+        var specialization;
+        if(name === "Kanika"){
+          this.specialization = "Internet of things / 17BCS####";
+        } else if (name === "Mahboba"){
+          this.specialization = "Cloud Computing / 17BCS####";
+        } else if (name === "Akash"){
+          this.specialization = "Internet of things / 17BCS####";
+        }
+        $('#aboutName').html(name);
+        $('#separator').addClass('border');
+        $('#aboutSpecialization').html(this.specialization);
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
